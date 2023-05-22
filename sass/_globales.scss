@@ -1,0 +1,161 @@
+@use 'components';
+@mixin section-display{
+    width: 100%;
+    padding: 3rem;
+    max-width: 992px;
+    margin: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+.logo{
+    img{
+        max-width: 7rem;
+        height: 40px;
+    }
+}
+.sec-home{
+    display: flex;
+    align-items: center;
+    @include section-display();
+    .home-cta{
+        flex: 1;
+        .cta-text{
+            color: components.$color-main;
+        }
+        .home-title{
+            width: 20rem;
+            font-size: 3rem;
+        }
+    }
+}
+.sec-features{
+    @include section-display();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .intro{
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+    .features{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .text{
+            padding: 2rem 0;
+            flex: 1;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                .description{
+                    margin-left: 1.15rem;
+                    max-width: 18rem;
+                    .desc-title{
+                        font-size: 1.25rem;
+                    }
+                    .desc-text{
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.sec-benefits{
+    border-top: 1px solid #ccc;
+    .intro{
+        @extend .sec-features, .intro;
+    }
+    .benefits-cards{
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+.sec-kpis{
+    background-color: components.$color-main;
+    color:components.$color-white;
+    padding: 4rem;
+    width: 100%;
+    margin: 0;
+    .kpi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc{
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+.sec-on-boarding{
+    width: 100%;
+    .intro{
+        @extend .sec-features,.intro;    
+    }
+    .steps{
+        padding: 0 5rem 7rem 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .step-separator{
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 2rem;
+        }
+    }
+}
+.sec-footer-cta{
+    background-color: #f4f8fe;
+    padding: 5rem 2rem;
+    background-image: url("https://assets.coinbase.com/assets/c2e6081f2526452d.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    .footer-cta{
+        width: 25%;
+        text-align: center;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-description{
+            font-size: 1.1rem;
+        }
+    }
+
+}
+@media (max-width:768px){
+
+    .sec-on-boarding{
+        .steps{
+            padding: 0;
+            flex-direction: column;
+        }
+    }
+    .sec-footer-cta{
+        background-image: none;
+        .footer-cta{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,257 @@
+.btn-main, .btn-main-s {
+  background-color: #0075ff;
+  color: #fff;
+  border: 1px solid #0075ff;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: #fff;
+  color: #0075ff;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.9rem;
+  list-style: none;
+  display: inline;
+  padding: 0 1rem;
+}
+.main-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  color: #0075ff;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #000;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+}
+.benefit .icon {
+  color: #0075ff;
+  font-size: 7.5rem;
+  text-align: center;
+}
+.benefit .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.benefit .description .text {
+  color: #888;
+  font-weight: 600;
+  text-align: center;
+}
+.benefit .cta {
+  color: #0075ff;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc i {
+  color: #0075ff;
+  font-size: 10rem;
+  padding: 0;
+  text-align: center;
+}
+.icon-desc .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: -2rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.logo img {
+  max-width: 7rem;
+  height: 40px;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  max-width: 992px;
+  margin: auto;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075ff;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+
+.sec-features, .sec-on-boarding .intro, .sec-benefits .intro {
+  width: 100%;
+  padding: 3rem;
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-features .intro, .sec-on-boarding .intro .intro, .sec-benefits .intro .intro {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-on-boarding .intro .intro h3, .sec-benefits .intro .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p, .sec-on-boarding .intro .intro p, .sec-benefits .intro .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-features .features, .sec-on-boarding .intro .features, .sec-benefits .intro .features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-features .features .text, .sec-on-boarding .intro .features .text, .sec-benefits .intro .features .text {
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .features .text .feature, .sec-on-boarding .intro .features .text .feature, .sec-benefits .intro .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feature .description, .sec-on-boarding .intro .features .text .feature .description, .sec-benefits .intro .features .text .feature .description {
+  margin-left: 1.15rem;
+  max-width: 18rem;
+}
+.sec-features .features .text .feature .description .desc-title, .sec-on-boarding .intro .features .text .feature .description .desc-title, .sec-benefits .intro .features .text .feature .description .desc-title {
+  font-size: 1.25rem;
+}
+.sec-features .features .text .feature .description .desc-text, .sec-on-boarding .intro .features .text .feature .description .desc-text, .sec-benefits .intro .features .text .feature .description .desc-text {
+  font-size: 1rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ccc;
+}
+.sec-benefits .benefits-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.sec-kpis {
+  background-color: #0075ff;
+  color: #fff;
+  padding: 4rem;
+  width: 100%;
+  margin: 0;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-on-boarding {
+  width: 100%;
+}
+.sec-on-boarding .steps {
+  padding: 0 5rem 7rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-on-boarding .steps .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 2rem;
+}
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem 2rem;
+  background-image: url("https://assets.coinbase.com/assets/c2e6081f2526452d.jpg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 25%;
+  text-align: center;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-on-boarding .steps {
+    padding: 0;
+    flex-direction: column;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
