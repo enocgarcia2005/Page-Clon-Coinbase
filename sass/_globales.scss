@@ -16,13 +16,14 @@ body{
     width: 100%;
     height: 4rem;
     border-bottom: solid 1px #ddd;
-}
-.logo{
-    img{
-        max-width: 7rem;
-        height: 40px;
+    .logo{
+        img{
+            max-width: 7rem;
+            height: 40px;
+        }
     }
 }
+
 .sec-home{
     display: flex;
     align-items: center;
